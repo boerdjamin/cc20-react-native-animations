@@ -4,7 +4,7 @@
 
 ## Generate Storybook Loader
 
-    yarn load-storybook
+    yarn make-storybook
 
 **NOTE**: Otherwise the file `storyLoader.js` is missing and bundling will fail.
 
