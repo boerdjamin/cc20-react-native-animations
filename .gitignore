@@ -64,3 +64,6 @@ buck-out/
 
 # StoryBook
 storybook/storyLoader.js
+
+# Environment Variables
+.env
