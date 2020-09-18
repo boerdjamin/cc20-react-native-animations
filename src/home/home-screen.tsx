@@ -22,7 +22,7 @@ export const HomeScreen: React.FunctionComponent = () => {
       text: 'Jumping Box',
     },
     {
-      onPress: () => undefined,
+      onPress: () => navigate('Moveable Box'),
       text: 'Moveable Box',
     },
   ]
