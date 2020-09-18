@@ -15,7 +15,7 @@ import { CAP3_GREEN } from '../../styles/colors'
 
 const BOX_DIMENSIONS = 100
 
-const TestComponent = () => {
+const TestComponent: React.FunctionComponent = () => {
   const offset = useSharedValue(0)
   const maxTranslateX = Dimensions.get('window').width - BOX_DIMENSIONS
 

@@ -1,7 +1,8 @@
 import { AppRegistry } from 'react-native'
+import Config from 'react-native-config'
+import 'react-native-gesture-handler'
 import App from './App'
 import { name as appName } from './app.json'
-import Config from 'react-native-config'
 import storybookUI from './storybook'
 
 if (Config.IS_STORYBOOK === 'true') {

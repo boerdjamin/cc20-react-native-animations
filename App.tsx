@@ -1,14 +1,22 @@
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
 import React from 'react'
 import { StyleSheet } from 'react-native'
 import { Colors } from 'react-native/Libraries/NewAppScreen'
 import TestComponent from './src/components/test-component/test-component'
+import { HomeScreen } from './src/home/home-screen'
 
-declare const global: { HermesInternal: null | {} }
+const Stack = createStackNavigator()
 
 const App = () => {
   return (
     <>
-      <TestComponent />
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Jumping Box" component={TestComponent} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </>
   )
 }
