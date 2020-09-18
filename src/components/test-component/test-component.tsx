@@ -3,6 +3,7 @@ import { Button, SafeAreaView, StyleSheet, View } from 'react-native'
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
+  withSpring,
 } from 'react-native-reanimated'
 import { CAP3_GREEN } from '../../styles/colors'
 
@@ -20,7 +21,9 @@ const TestComponent = () => {
       <View style={{ flex: 1 }}>
         <Animated.View style={[styles.box, animatedStyles]} />
         <Button
-          onPress={() => (offset.value = Math.random())}
+          onPress={() => {
+            offset.value = withSpring(Math.random())
+          }}
           title={'Press me'}
         />
       </View>
