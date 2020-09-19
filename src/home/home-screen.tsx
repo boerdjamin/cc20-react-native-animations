@@ -25,6 +25,10 @@ export const HomeScreen: React.FunctionComponent = () => {
       onPress: () => navigate('Moveable Box'),
       text: 'Moveable Box',
     },
+    {
+      onPress: () => navigate('Bottom Sheet'),
+      text: 'Bottom Sheet',
+    },
   ]
 
   const renderItem: ListRenderItem<HomeScreenButton> = ({ item }) => (
